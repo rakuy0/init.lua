@@ -7,6 +7,7 @@ vim.g.maplocalleader = "\\" -- Same for `maplocalleader`
 -- eh, whatever. I don't care about digraphs
 m.set("n", "<C-j>", ":bnext<CR>")
 m.set("n", "<C-k>", ":bprevious<CR>")
+
 m.set("n", "<C-x>", ":bd<CR>")
 
 --m.keymap.set("n", "<C-h>", "")
@@ -14,3 +15,5 @@ m.set("n", "<C-l>", ":nohlsearch<CR>")
 
 m.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
+m.set('n', '<leader>v', ":vsp<CR>")
+m.set('n', '<leader>s', ":sp<CR>")

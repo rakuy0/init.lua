@@ -46,7 +46,7 @@ local logo = [[
                 {
                     icon = " ",
                     desc = "Configure Neovim    ",
-                    action = "edit ~/.config/nvim/lua/init.lua",
+                    action = "edit ~/.config/nvim/lua/rakuyo/init.lua",
                     shortcut = "SPC v",
                 },
                 {
