@@ -42,3 +42,6 @@ vim.api.nvim_create_autocmd({'BufWinEnter'}, {
   pattern = '*',
   command = 'silent! normal! g`"zv',
 })
+
+vim.cmd("autocmd BufRead,BufNewFile *.storm set filetype=storm")
+vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
