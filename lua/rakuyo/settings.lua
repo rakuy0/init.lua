@@ -12,6 +12,7 @@ o.softtabstop = 4
 o.shiftwidth = 4
 o.scrolloff = 4
 
+o.autoindent = true
 o.smartindent = true
 o.showmatch = true
 
@@ -43,5 +44,5 @@ vim.api.nvim_create_autocmd({'BufWinEnter'}, {
   command = 'silent! normal! g`"zv',
 })
 
-vim.cmd("autocmd BufRead,BufNewFile *.storm set filetype=storm")
+-- vim.cmd("autocmd BufRead,BufNewFile *.storm set filetype=storm")
 vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())

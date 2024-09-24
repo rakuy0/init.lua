@@ -62,8 +62,8 @@ return {
 
         require('lualine').setup {
           options = {
-            theme = 'eldritch',
-            component_separators = '',
+            theme = 'auto',
+            -- component_separators = '',
             section_separators = { left = '', right = '' },
           },
           sections = process_sections {
