@@ -1,5 +1,7 @@
 local o = vim.opt
 
+-- vim.g['python3_host_prog'] = '~/.pyenv/versions/3.13.3/bin/python3'
+
 o.guicursor = ""
 
 o.nu = true
@@ -7,10 +9,14 @@ o.relativenumber = false
 
 o.ttyfast = true
 
+o.updatetime = 1000
 o.tabstop = 4
 o.softtabstop = 4
 o.shiftwidth = 4
 o.scrolloff = 4
+o.lazyredraw = true
+o.textwidth = 160
+vim.g.diagnostics_active = true
 
 o.autoindent = true
 o.smartindent = true
@@ -46,3 +52,6 @@ vim.api.nvim_create_autocmd({'BufWinEnter'}, {
 
 -- vim.cmd("autocmd BufRead,BufNewFile *.storm set filetype=storm")
 vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+vim.diagnostic.config({ virtual_text = true })
+
+--vim.lsp.enable('basedpyright')
